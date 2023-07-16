@@ -30,6 +30,16 @@ The `MyToken` contract is an ERC-20 compatible token contract implemented in Sol
 - `transfer`: Transfers tokens from the caller's address to the specified address.
 - `burn`: Burns (destroys) a specified amount of tokens from the caller's address.
 
+## `transferFrom` Function
+
+The `transferFrom` function allows a designated spender to transfer tokens from the specified `from` address to the `to` address.
+
+### Signature
+
+```solidity
+function transferFrom(address from, address to, uint256 amount) public
+
+
 ## License
 
 The `MyToken` contract is licensed under the MIT license.
