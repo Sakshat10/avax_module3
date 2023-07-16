@@ -50,7 +50,7 @@ contract MyToken {
         emit Burn(msg.sender, amount);
     }
 
-            function transferFrom(address from, address to, uint256 amount) public {
+     function transferFrom(address from, address to, uint256 amount) public {
         require(amount > 0, "Amount must be greater than zero");
         require(balanceOf[from] >= amount, "Insufficient balance");
 
